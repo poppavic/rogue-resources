@@ -797,56 +797,43 @@ nav {
     transform: translateY(0);
   }
 
-  /* ─── RESPONSIVE ─── */
-  @media (max-width: 900px) {
-    nav { padding: 0 24px; }
-    .nav-links, .nav-cta { display: none; }
-    .hero-content { padding: 0 24px; }
-    .section-inner { padding: 0 24px; }
-    .about-grid, .contact-grid, .why-grid { grid-template-columns: 1fr; gap: 40px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .industries-list { grid-template-columns: 1fr 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-    .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
-    .footer-links { flex-wrap: wrap; justify-content: center; }
-    .services-header { flex-direction: column; align-items: flex-start; gap: 16px; }
-    .hero-accent-bar { display: none; }
-    .hero-actions { flex-direction: column; }
-    .hero-actions a { text-align: center; }
-    .hero-stats { display: none; }
-    nav {
-  grid-template-columns: auto auto;
-  padding: 0 24px;
-}
-.nav-hamburger { display: flex; }
-.nav-links {
-  display: none;
-  position: fixed;
-  top: 72px;
-  left: 0; right: 0;
-  background: rgba(10,10,10,0.98);
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--border);
-}
-.hero-content { padding-top: 100px; }
-.hero-content > div:first-child { display: none; }
-.hero-stats { 
-  position: relative; 
-  bottom: auto; 
-  right: auto; 
-  padding: 24px; 
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 24px;
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  nav {
+    grid-template-columns: auto auto;
+    padding: 0 24px;
+  }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0; right: 0;
+    background: rgba(10,10,10,0.98);
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 16px 24px; font-size: 15px; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+  .hero-content { padding: 100px 24px 0 24px; }
+  .hero-content > div:first-child { display: none; }
+  .hero-accent-bar { display: none; }
+  .hero-stats { display: none; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions a { text-align: center; }
+  .section-inner { padding: 0 24px; }
+  .about-grid, .contact-grid, .why-grid { grid-template-columns: 1fr; gap: 40px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .services-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .industries-list { grid-template-columns: 1fr 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
 }
 
-.stat-item { text-align: left; }
-.nav-links.open { display: flex; }
-.nav-links a { padding: 16px 24px; font-size: 15px; }
-.nav-cta { display: none; }
-  }
 </style>
 </head>
 <body>
