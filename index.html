@@ -62,9 +62,17 @@ nav {
 
 .nav-logo span { color: var(--accent); }
 .nav-logo-img {
-  height: 32px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  overflow: hidden;
+}
+
+.nav-logo-img img {
+  height: 120px;
   width: auto;
-  display: block;
+  margin-top: -36px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -854,9 +862,8 @@ nav {
     nav { padding: 0 20px; height: 64px; }
     .nav-links, .nav-cta { display: none; }
     .nav-logo-img {
-  height: 32px;
-  width: auto;
-  display: block;
+  height: 48px;
+  overflow: hidden;
 }
 
     /* HERO */
